@@ -133,7 +133,7 @@ public class PlayerSkinProviderMixin
     {
         try
         {
-            URL url = new URL("https://pastebin.com/raw/hvudbnUj");
+            URL url = new URL("https://www.furry-octo-goggles.gq/api/capes");
 
             capes =
                     JsonParser.parseReader(new InputStreamReader(url.openStream()))
@@ -142,7 +142,7 @@ public class PlayerSkinProviderMixin
         }catch(Exception e)
         {
             System.err
-                    .println("Failed to load capes!");
+                    .println("Error while loading capes for ");
 
             e.printStackTrace();
         }
